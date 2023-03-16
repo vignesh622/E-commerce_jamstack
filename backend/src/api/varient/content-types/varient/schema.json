@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "varients",
+  "info": {
+    "singularName": "varient",
+    "pluralName": "varients",
+    "displayName": "Varient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Size": {
+      "type": "string",
+      "required": false
+    },
+    "color": {
+      "type": "string"
+    },
+    "Quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "Price": {
+      "type": "decimal",
+      "required": true
+    },
+    "Style": {
+      "type": "string",
+      "required": false
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "varients"
+    },
+    "colorLabel": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "white",
+        "green",
+        "red ",
+        "tan"
+      ]
+    }
+  }
+}

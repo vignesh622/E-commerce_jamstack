@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "gatsby-plugin-image": "^3.7.0",
+    "gatsby-plugin-sharp": "^5.7.0",
+    "gatsby-source-filesystem": "^5.7.0",
+    "gatsby-source-strapi": "^3.0.6",
+    "gatsby-transformer-remark": "^6.7.0",
+    "gatsby-transformer-sharp": "^5.7.0"
+  }
+}
